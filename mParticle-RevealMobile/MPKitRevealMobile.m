@@ -68,9 +68,10 @@
         self.revealSDK = [Reveal sharedInstance];
 
         // Turn on debug logging, not for production
-        self.revealSDK.debug = YES;
+        if ([MParticle sharedInstance].environment == MPEnvironmentDevelopment) {
+            self.revealSDK.debug = YES;
+        }
         self.revealSDK.delegate = self;
-
         [self.revealSDK setupWithAPIKey:appKey andServiceType:RVLServiceTypeProduction];
 
         _started = YES;
