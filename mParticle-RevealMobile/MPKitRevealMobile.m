@@ -74,6 +74,12 @@
         self.revealSDK.delegate = self;
         [self.revealSDK setupWithAPIKey:appKey andServiceType:RVLServiceTypeProduction];
 
+        // Check to see if configuration contains an override to the endpoint base
+        NSString *endpointBase = self.configuration[@"sdk_endpoint"]
+        if (endpointBase) {
+            [self.revealSDK updateAPIEndpointBase:endpointBase];
+        }
+        
         _started = YES;
 
         // Once the config values are set, start the SDK.
