@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "mParticle-RevealMobile"
-    s.version          = "7.0.0"
+    s.version          = "7.1.0"
     s.summary          = "Reveal Mobile integration for mParticle"
 
     s.description      = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "8.0"
     s.ios.source_files      = 'mParticle-RevealMobile/*.{h,m,mm}'
-    s.ios.dependency 'mParticle-Apple-SDK/mParticle', '~> 7.0.0'
+    s.ios.dependency 'mParticle-Apple-SDK/mParticle', '~> 7.1.0'
     s.ios.dependency 'Reveal', '>= 1.3.23'
     s.source_files = 'mParticle-RevealMobile/**/*'
     s.requires_arc = true
