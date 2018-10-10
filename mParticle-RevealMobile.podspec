@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "mParticle-RevealMobile"
-    s.version          = "7.7.1"
+    s.version          = "7.7.2"
     s.summary          = "Reveal Mobile integration for mParticle"
 
     s.description      = <<-DESC
