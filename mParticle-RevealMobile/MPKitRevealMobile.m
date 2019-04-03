@@ -79,7 +79,7 @@
             [self.revealSDK updateAPIEndpointBase:endpointBase];
         }
         
-        _started = YES;
+        self->_started = YES;
 
         // Once the config values are set, start the SDK.
         // The SDK will contact the server for further config info
