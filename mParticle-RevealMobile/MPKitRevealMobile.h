@@ -17,8 +17,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <mParticle_Apple_SDK/MPKitExecStatus.h>
-#import <mParticle_Apple_SDK/MPKitProtocol.h>
+#if defined(__has_include) && __has_include(<mParticle_Apple_SDK/mParticle.h>)
+#import <mParticle_Apple_SDK/mParticle.h>
+#else
+#import "mParticle.h"
+#endif
 
 @class Reveal;
 

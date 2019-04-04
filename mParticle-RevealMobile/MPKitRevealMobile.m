@@ -17,7 +17,6 @@
 //
 
 #import "MPKitRevealMobile.h"
-#import "mParticle.h"
 #import "Reveal.h"
 
 // // This is temporary to allow compilation (will be provided by core SDK)
